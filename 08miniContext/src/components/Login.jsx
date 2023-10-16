@@ -5,11 +5,11 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setpassword] = useState("");
 
-  const { serUser } = useContext(UserContext);
+  const { setUser } = useContext(UserContext);
 
   const handleSubmit = (e) => {
-    e.preventDefult();
-    serUser({ username, password });
+    e.preventDefault();
+    setUser({ username, password });
   };
   return (
     <div>
