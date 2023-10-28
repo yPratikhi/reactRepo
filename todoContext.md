@@ -7,7 +7,7 @@ Step 1:
 
 > Inside to ToContext Setup
 
-```
+```javascript
 import { createContext, useContext } from "react"
 
 export const TodoContext = createContext({
